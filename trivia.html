@@ -49,12 +49,30 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" style="margin-top: 40px;">
+        <h2>Trivia</h2>
+        <button class="btn btn-danger reset" onclick="reset()"> Reiniciar Trivia</button>
+        <hr>
+        <h3 id="intentos"></h3>
+        <div class="row">
+            <div class="col-md-6">
+                <p>¿Que apodo recibe Edward Elric al convertirse en un Alquimista Estatal?</p>
+                <div style="margin-bottom: 10px;">
+                    <form>
+                        <input type="text" id="respuestaDada" value="">
+                        <input type="submit" class="btn btn-danger" onclick="trivia()" value="Responder">
+                    </form>
+
+                </div>
+                <div id="alert"></div>
+            </div>
+        </div>
 
     </div>
 
 
     <!-- Optional JavaScript -->
+    <script src="assets/js/trivia.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
